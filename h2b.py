@@ -32,6 +32,8 @@ parser.register('type','ilist', str2ilist)
 parser.add_argument('-src', type=str, dest='srcfile', help='Haystack instance in JSON')
 args = parser.parse_args()
 
+################ Init base information ##############
+
 # Load Brick
 brick_tag_g = rdflib.Graph()
 brick_tag_g.parse('brick/BrickTag.ttl', format='turtle')
@@ -67,6 +69,8 @@ with open('brick/bh_map.json', 'w') as fp:
 print(sorted(not_found_h_tags))
 pdb.set_trace()
 
+
+################ Start Converting ##############
 
 # Load Haystack Instance
 with open(args.srcfile, 'r') as fp:
