@@ -1,0 +1,20 @@
+[
+    {
+        "ahu": true,
+        "area": "16,738 ft\u00b2",
+        "code": "AHU-1D",
+        "disMacro": "$navName",
+        "done": 1.0,
+        "equip": true,
+        "equipTypeName": "Air Handler Unit (Single Deck)",
+        "id": "AHU 09",
+        "lab": NaN,
+        "mod": "10-May-2017 Wed 9:09:18PM UTC",
+        "navName": "AHU 09",
+        "optimalStart": NaN,
+        "priorityOne": true,
+        "singleDuct": 1.0,
+        "siteRef": "PES",
+        "startDeadband": NaN
+    }
+]
