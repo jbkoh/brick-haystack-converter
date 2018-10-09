@@ -1,0 +1,366 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<meta charset='UTF-8'/><title>phIoT::Point &ndash; Project Haystack</title>
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+
+<div class='def-nav'>
+<ul>
+<li><a href='../index.html'>Index</a></li><li> » </li><li><a href='../phIoT/index.html'>phIoT</a></li><li> » </li><li><a href='../phIoT/Point.html'>Point</a></li></ul>
+</div>
+<hr />
+
+<div class='def-main'>
+
+<h2 class='def-main-heading'>kind</h2>
+<div class='def-main-section'>
+<h1>phIoT::Point</h1>
+
+<p>Data point such as a sensor or actuator</p>
+
+</div>
+
+<h2 class='def-main-heading'>details</h2>
+<div class='def-main-section'>
+<table class='def-props'>
+<tr>
+<th>lib</th>
+<td><a href='../phIoT/index.html'>phIoT</a></td>
+</tr>
+<tr>
+<th>superkind</th>
+<td><a href='../ph/Entity.html'>ph::Entity</a></td>
+</tr>
+<tr>
+<th>filter</th>
+<td>point</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'>superkinds</h2>
+<div class='def-main-section'>
+<table class='def-props'>
+<tr>
+<th><a href='../ph/Dict.html'>Dict</a></th>
+<td>
+<p>Dict is a map of tag name/value pairs</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Entity.html'>Entity</a></th>
+<td>
+<p>Entity represents top-level dicts with a unique identifier</p>
+</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'>subkinds</h2>
+<div class='def-main-section'>
+<table class='def-props'>
+<tr>
+<th><a href='../phIoT/AirPoint.html'>AirPoint</a></th>
+<td>
+<p>Point related to air</p>
+</td>
+</tr>
+<tr>
+<th><a href='../phIoT/ElecPoint.html'>ElecPoint</a></th>
+<td>
+<p>Point related to electricity</p>
+</td>
+</tr>
+<tr>
+<th><a href='../phIoT/WaterPoint.html'>WaterPoint</a></th>
+<td>
+<p>Point related to water</p>
+</td>
+</tr>
+<tr>
+<th><a href='../phIoT/WeatherPoint.html'>WeatherPoint</a></th>
+<td>
+<p>Weather observation point</p>
+</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'>traits</h2>
+<div class='def-main-section'>
+<table class='def-props'>
+<tr>
+<th><a href='../phIoT/CurPoint.html'>CurPoint</a></th>
+<td>
+<p>Point with support for a current value</p>
+</td>
+</tr>
+<tr>
+<th><a href='../phIoT/HisPoint.html'>HisPoint</a></th>
+<td>
+<p>Historized point with a history log of timestamp/value pairs</p>
+</td>
+</tr>
+<tr>
+<th><a href='../phIoT/PointType.html'>PointType</a></th>
+<td>
+<p>Classifies point as a sensor, command, or setpoint</p>
+</td>
+</tr>
+<tr>
+<th><a href='../phIoT/WritablePoint.html'>WritablePoint</a></th>
+<td>
+<p>Point with writable output using 16-level priority array</p>
+</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'>tags</h2>
+<div class='def-main-section'>
+<table class='def-props'>
+<tr id='enum'>
+<th><a href='../phIoT/Point.enum.html'>enum</a></th>
+<td><a href='../ph/EnumRange.html'>EnumRange</a></td>
+<td>
+<p>Enuermated string names for Bool or Str points</p>
+</td>
+</tr>
+<tr id='equipRef'>
+<th><a href='../phIoT/Point.equipRef.html'>equipRef</a></th>
+<td><a href='../ph/Contains.html'>Contains</a> « <a href='../phIoT/Equip.html'>Equip</a></td>
+<td>
+<p>Equip which contains this point</p>
+</td>
+</tr>
+<tr id='kind'>
+<th><a href='../phIoT/Point.kind.html'>kind</a></th>
+<td><a href='../ph/Str.html'>Str</a></td>
+<td>
+<p>Point value type</p>
+</td>
+</tr>
+<tr id='point'>
+<th><a href='../phIoT/Point.point.html'>point!</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>Labels an <a href='../ph/Entity.html'>Entity</a> as a <a href='../phIoT/Point.html'>Point</a></p>
+</td>
+</tr>
+<tr id='siteRef'>
+<th><a href='../phIoT/Point.siteRef.html'>siteRef</a></th>
+<td><a href='../ph/Contains.html'>Contains</a> « <a href='../phIoT/Site.html'>Site</a></td>
+<td>
+<p>Site which contains this point</p>
+</td>
+</tr>
+<tr id='spaceRef'>
+<th><a href='../phIoT/Point.spaceRef.html'>spaceRef</a></th>
+<td><a href='../ph/Contains.html'>Contains</a> « <a href='../phIoT/Space.html'>Space</a></td>
+<td>
+<p>Space which contains this point</p>
+</td>
+</tr>
+<tr id='tz'>
+<th><a href='../phIoT/Point.tz.html'>tz</a></th>
+<td><a href='../ph/TimeZoneName.html'>TimeZoneName</a></td>
+<td>
+<p>TimeZone identifier point's historical data logs</p>
+</td>
+</tr>
+<tr id='unit'>
+<th><a href='../phIoT/Point.unit.html'>unit</a></th>
+<td><a href='../ph/UnitName.html'>UnitName</a></td>
+<td>
+<p>Unit of measurement for the point's value if numeric</p>
+</td>
+</tr>
+</table>
+
+<h3 id='CurPoint'><span class='def-font-small'>mixin </span><a href='../phIoT/CurPoint.html'>CurPoint</a></h3>
+
+<p>Point with support for a current value</p>
+<table class='def-props'>
+<tr id='cur'>
+<th><a href='../phIoT/CurPoint.cur.html'>cur!</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>Labels a <a href='../phIoT/Point.html'>Point</a> as a <a href='../phIoT/CurPoint.html'>CurPoint</a></p>
+</td>
+</tr>
+<tr id='curErr'>
+<th><a href='../phIoT/CurPoint.curErr.html'>curErr</a></th>
+<td><a href='../ph/Str.html'>Str</a></td>
+<td>
+<p>Error message associated when <a href='../phIoT/CurPoint.curStatus.html'>curStatus</a> indicates error condition</p>
+</td>
+</tr>
+<tr id='curStatus'>
+<th><a href='../phIoT/CurPoint.curStatus.html'>curStatus</a></th>
+<td><a href='../ph/Str.html'>Str</a></td>
+<td>
+<p>Status of point's current value reading</p>
+</td>
+</tr>
+<tr id='curVal'>
+<th><a href='../phIoT/CurPoint.curVal.html'>curVal</a></th>
+<td><a href='../ph/Scalar.html'>Scalar</a></td>
+<td>
+<p>Current value of the point</p>
+</td>
+</tr>
+</table>
+
+<h3 id='HisPoint'><span class='def-font-small'>mixin </span><a href='../phIoT/HisPoint.html'>HisPoint</a></h3>
+
+<p>Historized point with a history log of timestamp/value pairs</p>
+<table class='def-props'>
+<tr id='his'>
+<th><a href='../phIoT/HisPoint.his.html'>his!</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>Labels a <a href='../phIoT/Point.html'>Point</a> as a <a href='../phIoT/HisPoint.html'>HisPoint</a></p>
+</td>
+</tr>
+<tr id='hisErr'>
+<th><a href='../phIoT/HisPoint.hisErr.html'>hisErr</a></th>
+<td><a href='../ph/Str.html'>Str</a></td>
+<td>
+<p>Error message associated when <a href='../phIoT/HisPoint.hisStatus.html'>hisStatus</a> indicates error condition</p>
+</td>
+</tr>
+<tr id='hisMode'>
+<th><a href='../phIoT/HisPoint.hisMode.html'>hisMode</a></th>
+<td><a href='../ph/Str.html'>Str</a></td>
+<td>
+<p>Indicates the method of history data collection</p>
+</td>
+</tr>
+<tr id='hisStatus'>
+<th><a href='../phIoT/HisPoint.hisStatus.html'>hisStatus</a></th>
+<td><a href='../ph/Str.html'>Str</a></td>
+<td>
+<p>Status of point's current history collection or synchronization</p>
+</td>
+</tr>
+<tr id='hisTotalized'>
+<th><a href='../phIoT/HisPoint.hisTotalized.html'>hisTotalized</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>History is an accumulation of incrementing values</p>
+</td>
+</tr>
+</table>
+
+<h3 id='PointType'><span class='def-font-small'>choice </span><a href='../phIoT/PointType.html'>PointType</a></h3>
+
+<p>Classifies point as a sensor, command, or setpoint</p>
+<table class='def-props'>
+<tr id='cmd'>
+<th><a href='../phIoT/PointType.cmd.html'>cmd</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>Point is a command, actuator, AO/BO</p>
+</td>
+</tr>
+<tr id='sensor'>
+<th><a href='../phIoT/PointType.sensor.html'>sensor</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>Point is a sensor, input, AI/BI</p>
+</td>
+</tr>
+<tr id='sp'>
+<th><a href='../phIoT/PointType.sp.html'>sp</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>Point is a setpoint, soft point, internal control variable, schedule</p>
+</td>
+</tr>
+</table>
+
+<h3 id='WritablePoint'><span class='def-font-small'>mixin </span><a href='../phIoT/WritablePoint.html'>WritablePoint</a></h3>
+
+<p>Point with writable output using 16-level priority array</p>
+<table class='def-props'>
+<tr id='writable'>
+<th><a href='../phIoT/WritablePoint.writable.html'>writable!</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>Labels a <a href='../phIoT/Point.html'>Point</a> as a <a href='../phIoT/WritablePoint.html'>WritablePoint</a></p>
+</td>
+</tr>
+<tr id='writeErr'>
+<th><a href='../phIoT/WritablePoint.writeErr.html'>writeErr</a></th>
+<td><a href='../ph/Str.html'>Str</a></td>
+<td>
+<p>Error message associated when <a href='../phIoT/WritablePoint.writeStatus.html'>writeStatus</a> indicates an error condition</p>
+</td>
+</tr>
+<tr id='writeLevel'>
+<th><a href='../phIoT/WritablePoint.writeLevel.html'>writeLevel</a></th>
+<td><a href='../ph/Number.html'>Number</a></td>
+<td>
+<p>Current priority level for <a href='../phIoT/WritablePoint.writeVal.html'>writeVal</a> as number between 1 and 17</p>
+</td>
+</tr>
+<tr id='writeStatus'>
+<th><a href='../phIoT/WritablePoint.writeStatus.html'>writeStatus</a></th>
+<td><a href='../ph/Str.html'>Str</a></td>
+<td>
+<p>Current status of a writable point output</p>
+</td>
+</tr>
+<tr id='writeVal'>
+<th><a href='../phIoT/WritablePoint.writeVal.html'>writeVal</a></th>
+<td><a href='../ph/Scalar.html'>Scalar</a></td>
+<td>
+<p>Current desired value to write to output</p>
+</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'>inherited</h2>
+<div class='def-main-section'>
+
+<h3 id='Entity'><span class='def-font-small'>superkind </span><a href='../ph/Entity.html'>Entity</a></h3>
+
+<p>Entity represents top-level dicts with a unique identifier</p>
+<table class='def-props'>
+<tr id='dis'>
+<th><a href='../ph/Entity.dis.html'>dis</a></th>
+<td><a href='../ph/Str.html'>Str</a></td>
+<td>
+<p>Display name for humans</p>
+</td>
+</tr>
+<tr id='id'>
+<th><a href='../ph/Entity.id.html'>id</a></th>
+<td><a href='../ph/Ref.html'>Ref</a></td>
+<td>
+<p>Defines the unique identifier of an entity in system using a Ref value type</p>
+</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'></h2>
+<div class='def-main-section'>
+<p class='def-footer-ts'>
+Generated 10-Aug-2018 Fri 9:52:01AM EDT</p>
+
+</div>
+
+</div>
+</body>
+</html>

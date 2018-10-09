@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<meta charset='UTF-8'/><title>phIoT::Weather &ndash; Project Haystack</title>
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+
+<div class='def-nav'>
+<ul>
+<li><a href='../index.html'>Index</a></li><li> » </li><li><a href='../phIoT/index.html'>phIoT</a></li><li> » </li><li><a href='../phIoT/Weather.html'>Weather</a></li></ul>
+</div>
+<hr />
+
+<div class='def-main'>
+
+<h2 class='def-main-heading'>kind</h2>
+<div class='def-main-section'>
+<h1>phIoT::Weather</h1>
+
+<p>Weather station</p>
+
+</div>
+
+<h2 class='def-main-heading'>details</h2>
+<div class='def-main-section'>
+<table class='def-props'>
+<tr>
+<th>lib</th>
+<td><a href='../phIoT/index.html'>phIoT</a></td>
+</tr>
+<tr>
+<th>superkind</th>
+<td><a href='../ph/Entity.html'>ph::Entity</a></td>
+</tr>
+<tr>
+<th>filter</th>
+<td>weather</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'>superkinds</h2>
+<div class='def-main-section'>
+<table class='def-props'>
+<tr>
+<th><a href='../ph/Dict.html'>Dict</a></th>
+<td>
+<p>Dict is a map of tag name/value pairs</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Entity.html'>Entity</a></th>
+<td>
+<p>Entity represents top-level dicts with a unique identifier</p>
+</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'>traits</h2>
+<div class='def-main-section'>
+<table class='def-props'>
+<tr>
+<th><a href='../ph/GeoPlace.html'>GeoPlace</a></th>
+<td>
+<p>Geographic place</p>
+</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'>tags</h2>
+<div class='def-main-section'>
+<table class='def-props'>
+<tr id='weather'>
+<th><a href='../phIoT/Weather.weather.html'>weather!</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>Labels an Entity as a Weather</p>
+</td>
+</tr>
+</table>
+
+<h3 id='GeoPlace'><span class='def-font-small'>mixin </span><a href='../ph/GeoPlace.html'>GeoPlace</a></h3>
+
+<p>Geographic place</p>
+<table class='def-props'>
+<tr id='geoAddr'>
+<th><a href='../ph/GeoPlace.geoAddr.html'>geoAddr</a></th>
+<td><a href='../ph/Str.html'>Str</a></td>
+<td>
+<p>Free form street address</p>
+</td>
+</tr>
+<tr id='geoCity'>
+<th><a href='../ph/GeoPlace.geoCity.html'>geoCity</a></th>
+<td><a href='../ph/Str.html'>Str</a></td>
+<td>
+<p>Geographic city or locality name</p>
+</td>
+</tr>
+<tr id='geoCoord'>
+<th><a href='../ph/GeoPlace.geoCoord.html'>geoCoord</a></th>
+<td><a href='../ph/Coord.html'>Coord</a></td>
+<td>
+<p>Geographic coordinate as "C(latitude,longitude)"</p>
+</td>
+</tr>
+<tr id='geoCountry'>
+<th><a href='../ph/GeoPlace.geoCountry.html'>geoCountry</a></th>
+<td><a href='../ph/Str.html'>Str</a></td>
+<td>
+<p>Geographic country as <a href='http://en.wikipedia.org/wiki/ISO_3166-1'>ISO 3166-1</a> two letter code</p>
+</td>
+</tr>
+<tr id='geoCounty'>
+<th><a href='../ph/GeoPlace.geoCounty.html'>geoCounty</a></th>
+<td><a href='../ph/Str.html'>Str</a></td>
+<td>
+<p>Geographic subdivision of US state</p>
+</td>
+</tr>
+<tr id='geoPostalCode'>
+<th><a href='../ph/GeoPlace.geoPostalCode.html'>geoPostalCode</a></th>
+<td><a href='../ph/Str.html'>Str</a></td>
+<td>
+<p>Geographic postal code; for US this is a five digit zip code</p>
+</td>
+</tr>
+<tr id='geoState'>
+<th><a href='../ph/GeoPlace.geoState.html'>geoState</a></th>
+<td><a href='../ph/Str.html'>Str</a></td>
+<td>
+<p>State or province name; for US this is two letter state code</p>
+</td>
+</tr>
+<tr id='geoStreet'>
+<th><a href='../ph/GeoPlace.geoStreet.html'>geoStreet</a></th>
+<td><a href='../ph/Str.html'>Str</a></td>
+<td>
+<p>Geographic street address and name</p>
+</td>
+</tr>
+<tr id='tz'>
+<th><a href='../ph/GeoPlace.tz.html'>tz</a></th>
+<td><a href='../ph/TimeZoneName.html'>TimeZoneName</a></td>
+<td>
+<p>TimeZone identifier for location</p>
+</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'>inherited</h2>
+<div class='def-main-section'>
+
+<h3 id='Entity'><span class='def-font-small'>superkind </span><a href='../ph/Entity.html'>Entity</a></h3>
+
+<p>Entity represents top-level dicts with a unique identifier</p>
+<table class='def-props'>
+<tr id='dis'>
+<th><a href='../ph/Entity.dis.html'>dis</a></th>
+<td><a href='../ph/Str.html'>Str</a></td>
+<td>
+<p>Display name for humans</p>
+</td>
+</tr>
+<tr id='id'>
+<th><a href='../ph/Entity.id.html'>id</a></th>
+<td><a href='../ph/Ref.html'>Ref</a></td>
+<td>
+<p>Defines the unique identifier of an entity in system using a Ref value type</p>
+</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'></h2>
+<div class='def-main-section'>
+<p class='def-footer-ts'>
+Generated 10-Aug-2018 Fri 9:52:01AM EDT</p>
+
+</div>
+
+</div>
+</body>
+</html>

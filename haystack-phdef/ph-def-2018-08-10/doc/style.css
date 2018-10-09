@@ -1,0 +1,156 @@
+/*
+// Copyright (c) 2017, Project-Haystack
+// Licensed under the Academic Free License version 3.0
+//
+// History:
+//   27 Sep 2017  Brian Frank  Creation
+*/
+
+body {
+  font:14px "Droid Sans", Lucida Grande, Segoe UI, Arial, sans-serif;
+  line-height:1.5em; padding:0; margin: 20px; background:#fff;
+}
+
+img { border:0; }
+
+hr {
+  border: 0;
+  border-top: 1px solid #2980b9;
+}
+
+a {
+  color: #9b59b6;
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: 1px dotted #9b59b6;
+}
+
+.def-font-small {
+  font-size: 12px;
+}
+
+code {
+  color: #27ae60;
+}
+
+/*************************************************************************
+ * Def Navigation
+ ************************************************************************/
+
+.def-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  font: bold 16px "Droid Sans", "Helvetica Neue", Arial, Sans;
+}
+
+.def-nav ul li {
+  display: inline;
+  margin: 0 4px;
+  padding: 2px 0;
+}
+
+.def-nav ul li a {
+  color: #2980b9;
+}
+
+/*************************************************************************
+ * Def Main
+ ************************************************************************/
+
+.def-main  {
+  margin: 30px 0 0 0;
+  display: grid;
+  grid-template-columns: 120px 800px;
+  grid-row-gap: 30px;
+  grid-column-gap: 20px;
+}
+
+.def-main-heading  {
+  margin: 0;
+  padding: 0;
+  color: #2980b9;
+  font: bold 18px "Droid Sans", "Helvetica Neue", Arial, Sans;
+  text-align: right;
+}
+
+.def-main-section {
+  margin: 0;
+  padding: 0;
+}
+
+.def-main-section > h1 {
+  color: #27ae60;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+
+.def-main-section > h3 {
+  padding: 0;
+  color: #2980b9;
+  margin: 24px 0 8px 0;
+}
+
+.def-main-section > h3 a {
+  color: #2980b9;
+}
+
+.def-main-section > h3 a:hover {
+  border-bottom: 1px dotted #2980b9;
+}
+
+.def-main-section > h3:first-child {
+  margin-top: 0;
+}
+
+.def-main-section > p {
+  margin: 6px 0;
+}
+
+
+.def-footer-ts  {
+  font-size: 9px;
+  color: #555;
+}
+
+/*************************************************************************
+ * Def Props Table
+ ************************************************************************/
+
+.def-props {
+  border-collapse: collapse;
+  border-bottom:1px solid #eee;
+}
+
+.def-props tr  {
+  border-top:1px solid #eee;
+}
+
+.def-props th {
+  font-weight: bold;
+  text-align: left;
+  vertical-align: text-top;
+  padding: 4px 10px 4px 0px;
+  white-space: nowrap;
+  color: #27ae60;
+}
+
+.def-props th a {
+  color: #27ae60;
+  text-decoration: none;
+}
+
+.def-props th a:hover {
+  border-bottom: 1px dotted #27ae60;
+}
+
+.def-props td {
+  padding: 4px 6px;
+}
+
+.def-props td p {
+  margin:0;
+}
+

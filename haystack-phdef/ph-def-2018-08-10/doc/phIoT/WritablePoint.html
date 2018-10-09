@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<meta charset='UTF-8'/><title>phIoT::WritablePoint &ndash; Project Haystack</title>
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+
+<div class='def-nav'>
+<ul>
+<li><a href='../index.html'>Index</a></li><li> » </li><li><a href='../phIoT/index.html'>phIoT</a></li><li> » </li><li><a href='../phIoT/WritablePoint.html'>WritablePoint</a></li></ul>
+</div>
+<hr />
+
+<div class='def-main'>
+
+<h2 class='def-main-heading'>kind</h2>
+<div class='def-main-section'>
+<h1>phIoT::WritablePoint</h1>
+
+<p>Point with writable output using 16-level priority array. Writable points are points which model an output or setpoint and may be commanded.  Writable points are modeled on the BACnet 16-level priority array with a relinquish default which effectively acts as level 17.</p>
+
+<p>The following levels have special behavior:</p>
+
+<ul>
+<li><strong>Level 1</strong>: highest priority reserved for emergency overrides</li>
+
+<li><strong>Level 8</strong>: manual override with ability to set timer to expire back to auto</li>
+
+<li><strong>Default</strong>: implicitly acts as level 17 for relinquish default</li>
+</ul>
+
+<p>The priority array provides for contention resolution when many different control applications may be vying for control of a given point. Low level applications like scheduling typically control levels 14, 15, or 16. Then users can override at level 8. But a higher levels like 2 to 7 can be used to trump a user override (for example a demand response energy routine that requires higher priority).</p>
+
+<p>The actual value to write is resolved by starting at level 1 and working down to relinquish default to find the first non-null value. It is possible for all levels to be null, in which case the overall write output is null (which in turn may be auto/null to another system). Anytime a null value is written to a priority level, we say that level has been set to auto or released (this allows the next highest level to take command of the output).</p>
+
+</div>
+
+<h2 class='def-main-heading'>details</h2>
+<div class='def-main-section'>
+<table class='def-props'>
+<tr>
+<th>lib</th>
+<td><a href='../phIoT/index.html'>phIoT</a></td>
+</tr>
+<tr>
+<th>superkind</th>
+<td><a href='../ph/Mixin.html'>ph::Mixin</a></td>
+</tr>
+<tr>
+<th>filter</th>
+<td>writable</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'>superkinds</h2>
+<div class='def-main-section'>
+<table class='def-props'>
+<tr>
+<th><a href='../ph/Trait.html'>Trait</a></th>
+<td>
+<p>Trait is a grouping of tag definitions</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Mixin.html'>Mixin</a></th>
+<td>
+<p>Mixin models a set of tags used together</p>
+</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'>used by</h2>
+<div class='def-main-section'>
+<table class='def-props'>
+<tr>
+<th><a href='../phIoT/Point.html'>Point</a></th>
+<td>
+<p>Data point such as a sensor or actuator</p>
+</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'>tags</h2>
+<div class='def-main-section'>
+<table class='def-props'>
+<tr id='writable'>
+<th><a href='../phIoT/WritablePoint.writable.html'>writable!</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>Labels a <a href='../phIoT/Point.html'>Point</a> as a <a href='../phIoT/WritablePoint.html'>WritablePoint</a></p>
+</td>
+</tr>
+<tr id='writeErr'>
+<th><a href='../phIoT/WritablePoint.writeErr.html'>writeErr</a></th>
+<td><a href='../ph/Str.html'>Str</a></td>
+<td>
+<p>Error message associated when <a href='../phIoT/WritablePoint.writeStatus.html'>writeStatus</a> indicates an error condition</p>
+</td>
+</tr>
+<tr id='writeLevel'>
+<th><a href='../phIoT/WritablePoint.writeLevel.html'>writeLevel</a></th>
+<td><a href='../ph/Number.html'>Number</a></td>
+<td>
+<p>Current priority level for <a href='../phIoT/WritablePoint.writeVal.html'>writeVal</a> as number between 1 and 17</p>
+</td>
+</tr>
+<tr id='writeStatus'>
+<th><a href='../phIoT/WritablePoint.writeStatus.html'>writeStatus</a></th>
+<td><a href='../ph/Str.html'>Str</a></td>
+<td>
+<p>Current status of a writable point output</p>
+</td>
+</tr>
+<tr id='writeVal'>
+<th><a href='../phIoT/WritablePoint.writeVal.html'>writeVal</a></th>
+<td><a href='../ph/Scalar.html'>Scalar</a></td>
+<td>
+<p>Current desired value to write to output</p>
+</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'></h2>
+<div class='def-main-section'>
+<p class='def-footer-ts'>
+Generated 10-Aug-2018 Fri 9:52:01AM EDT</p>
+
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<meta charset='UTF-8'/><title>ph &ndash; Project Haystack</title>
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+
+<div class='def-nav'>
+<ul>
+<li><a href='../index.html'>Index</a></li><li> » </li><li><a href='../ph/index.html'>ph</a></li></ul>
+</div>
+<hr />
+
+<div class='def-main'>
+
+<h2 class='def-main-heading'>lib</h2>
+<div class='def-main-section'>
+<h1>ph</h1>
+
+<p>Project Haystack core definitions</p>
+
+</div>
+
+<h2 class='def-main-heading'>meta</h2>
+<div class='def-main-section'>
+<table class='def-props'>
+<tr>
+<th><a href='../ph/LibMeta.uri.html'>uri</a></th>
+<td>https://project-haystack.org/def/ph</td>
+</tr>
+<tr>
+<th><a href='../ph/LibMeta.version.html'>version</a></th>
+<td>4.0.1</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'>kinds</h2>
+<div class='def-main-section'>
+<table class='def-props'>
+<tr>
+<th><a href='../ph/Any.html'>Any</a></th>
+<td>
+<p>Any is the root of the type system</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Bool.html'>Bool</a></th>
+<td>
+<p>Boolean value <code>true</code> or <code>false</code></p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Choice.html'>Choice</a></th>
+<td>
+<p>Choice models an exclusive set of tags</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Contains.html'>Contains</a></th>
+<td>
+<p>Containment relationship as <code>parent >> child</code></p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Coord.html'>Coord</a></th>
+<td>
+<p>Geographic coordinate in latitude/longitude formatted as <code>C(lat,lng)</code></p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Date.html'>Date</a></th>
+<td>
+<p>ISO 8601 date as year, month, day</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/DateTime.html'>DateTime</a></th>
+<td>
+<p>ISO 8601 timestamp followed by timezone identifier</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/DefMeta.html'>DefMeta</a></th>
+<td>
+<p>Definition meta data tags</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Dict.html'>Dict</a></th>
+<td>
+<p>Dict is a map of tag name/value pairs</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Duration.html'>Duration</a></th>
+<td>
+<p>Number with a time unit such as "ms", "sec", "min", "hr", or "day"</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Entity.html'>Entity</a></th>
+<td>
+<p>Entity represents top-level dicts with a unique identifier</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/EnumRange.html'>EnumRange</a></th>
+<td>
+<p>Defines an eumeration of string keys</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/GeoPlace.html'>GeoPlace</a></th>
+<td>
+<p>Geographic place</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Grid.html'>Grid</a></th>
+<td>
+<p>Grid is a two dimension table of columns and rows</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/KindMeta.html'>KindMeta</a></th>
+<td>
+<p>Kind definition meta data</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/KindName.html'>KindName</a></th>
+<td>
+<p>Str restricted to legal kind name</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/LibMeta.html'>LibMeta</a></th>
+<td>
+<p>Library defintion meta data</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/List.html'>List</a></th>
+<td>
+<p>Ordered list of zero or more values</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Marker.html'>Marker</a></th>
+<td>
+<p>Marker is a annotation used to add a qualifying label to a dict</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Mixin.html'>Mixin</a></th>
+<td>
+<p>Mixin models a set of tags used together</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/NA.html'>NA</a></th>
+<td>
+<p>Not available used to indicate invalid or missing data</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Number.html'>Number</a></th>
+<td>
+<p>Integer or floating point numbers annotated with an optional unit</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Ref.html'>Ref</a></th>
+<td>
+<p>Reference to an Entity</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Scalar.html'>Scalar</a></th>
+<td>
+<p>Scalar is an atomic value kind</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Str.html'>Str</a></th>
+<td>
+<p>Unicode string of characters</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/TagMeta.html'>TagMeta</a></th>
+<td>
+<p>Tag definition meta data</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/TagName.html'>TagName</a></th>
+<td>
+<p>Str restricted to legal tag name</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Time.html'>Time</a></th>
+<td>
+<p>ISO 8601 time as hour, minute, seconds</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/TimeZoneName.html'>TimeZoneName</a></th>
+<td>
+<p>Timezone identifier which is city name from the zoneinfo database</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Trait.html'>Trait</a></th>
+<td>
+<p>Trait is a grouping of tag definitions</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/UnitName.html'>UnitName</a></th>
+<td>
+<p>Unit identifier string from the unit database</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Uri.html'>Uri</a></th>
+<td>
+<p>Unverisal resource identifier</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/ValMeta.html'>ValMeta</a></th>
+<td>
+<p>Value based meta data</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/XStr.html'>XStr</a></th>
+<td>
+<p>Extended string - type name and string value encoding</p>
+</td>
+</tr>
+<table class='def-props'>
+
+</div>
+
+<h2 class='def-main-heading'></h2>
+<div class='def-main-section'>
+<p class='def-footer-ts'>
+Generated 10-Aug-2018 Fri 9:52:01AM EDT</p>
+
+</div>
+
+</div>
+</body>
+</html>

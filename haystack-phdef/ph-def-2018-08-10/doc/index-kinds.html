@@ -1,0 +1,534 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<meta charset='UTF-8'/><title>Kinds &ndash; Project Haystack</title>
+<link rel='stylesheet' type='text/css' href='style.css' />
+</head>
+<body>
+
+<div class='def-nav'>
+<ul>
+<li><a href='index.html'>Index</a></li><li> » </li><li><a href='index-kinds.html'>Kinds</a></li></ul>
+</div>
+<hr />
+
+<div class='def-main'>
+
+<h2 class='def-main-heading'></h2>
+<div class='def-main-section'>
+
+<p>All kinds listed alphabetically</p>
+<table class='def-props'>
+<tr>
+<th><a href='ph/Any.html'>Any</a></th>
+<td>
+<p>Any is the root of the type system</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/Bool.html'>Bool</a></th>
+<td>
+<p>Boolean value <code>true</code> or <code>false</code></p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/Choice.html'>Choice</a></th>
+<td>
+<p>Choice models an exclusive set of tags</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/Contains.html'>Contains</a></th>
+<td>
+<p>Containment relationship as <code>parent >> child</code></p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/Coord.html'>Coord</a></th>
+<td>
+<p>Geographic coordinate in latitude/longitude formatted as <code>C(lat,lng)</code></p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/Date.html'>Date</a></th>
+<td>
+<p>ISO 8601 date as year, month, day</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/DateTime.html'>DateTime</a></th>
+<td>
+<p>ISO 8601 timestamp followed by timezone identifier</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/DefMeta.html'>DefMeta</a></th>
+<td>
+<p>Definition meta data tags</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/Dict.html'>Dict</a></th>
+<td>
+<p>Dict is a map of tag name/value pairs</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/Duration.html'>Duration</a></th>
+<td>
+<p>Number with a time unit such as "ms", "sec", "min", "hr", or "day"</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/Entity.html'>Entity</a></th>
+<td>
+<p>Entity represents top-level dicts with a unique identifier</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/EnumRange.html'>EnumRange</a></th>
+<td>
+<p>Defines an eumeration of string keys</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/GeoPlace.html'>GeoPlace</a></th>
+<td>
+<p>Geographic place</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/Grid.html'>Grid</a></th>
+<td>
+<p>Grid is a two dimension table of columns and rows</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/KindMeta.html'>KindMeta</a></th>
+<td>
+<p>Kind definition meta data</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/KindName.html'>KindName</a></th>
+<td>
+<p>Str restricted to legal kind name</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/LibMeta.html'>LibMeta</a></th>
+<td>
+<p>Library defintion meta data</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/List.html'>List</a></th>
+<td>
+<p>Ordered list of zero or more values</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/Marker.html'>Marker</a></th>
+<td>
+<p>Marker is a annotation used to add a qualifying label to a dict</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/Mixin.html'>Mixin</a></th>
+<td>
+<p>Mixin models a set of tags used together</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/NA.html'>NA</a></th>
+<td>
+<p>Not available used to indicate invalid or missing data</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/Number.html'>Number</a></th>
+<td>
+<p>Integer or floating point numbers annotated with an optional unit</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/Ref.html'>Ref</a></th>
+<td>
+<p>Reference to an Entity</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/Scalar.html'>Scalar</a></th>
+<td>
+<p>Scalar is an atomic value kind</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/Str.html'>Str</a></th>
+<td>
+<p>Unicode string of characters</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/TagMeta.html'>TagMeta</a></th>
+<td>
+<p>Tag definition meta data</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/TagName.html'>TagName</a></th>
+<td>
+<p>Str restricted to legal tag name</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/Time.html'>Time</a></th>
+<td>
+<p>ISO 8601 time as hour, minute, seconds</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/TimeZoneName.html'>TimeZoneName</a></th>
+<td>
+<p>Timezone identifier which is city name from the zoneinfo database</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/Trait.html'>Trait</a></th>
+<td>
+<p>Trait is a grouping of tag definitions</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/UnitName.html'>UnitName</a></th>
+<td>
+<p>Unit identifier string from the unit database</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/Uri.html'>Uri</a></th>
+<td>
+<p>Unverisal resource identifier</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/ValMeta.html'>ValMeta</a></th>
+<td>
+<p>Value based meta data</p>
+</td>
+</tr>
+<tr>
+<th><a href='ph/XStr.html'>XStr</a></th>
+<td>
+<p>Extended string - type name and string value encoding</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/Ahu.html'>Ahu</a></th>
+<td>
+<p>Air handling unit</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/AhuDelivery.html'>AhuDelivery</a></th>
+<td>
+<p>AHU delivery of conditioned air to the zone</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/AirCoolingMethod.html'>AirCoolingMethod</a></th>
+<td>
+<p>Method to cool air for conditioning spaces</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/AirDuctwork.html'>AirDuctwork</a></th>
+<td>
+<p>Ductwork configuration</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/AirFlow.html'>AirFlow</a></th>
+<td>
+<p>Flow of air through ductwork as <code>from >> to</code></p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/AirHeatingMethod.html'>AirHeatingMethod</a></th>
+<td>
+<p>Method to heat air for conditioning spaces</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/AirPoint.html'>AirPoint</a></th>
+<td>
+<p>Point related to air</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/AirPointQuantity.html'>AirPointQuantity</a></th>
+<td>
+<p>Quantity or apparatus of air measured or controlled</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/AirPointSection.html'>AirPointSection</a></th>
+<td>
+<p>Equipment section where point is located</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/AirVolume.html'>AirVolume</a></th>
+<td>
+<p>Ability to adjust volume of air flow</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/ChilledWaterPlant.html'>ChilledWaterPlant</a></th>
+<td>
+<p>ChilledWaterPlant outputs chilled water for HVAC cooling</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/CurPoint.html'>CurPoint</a></th>
+<td>
+<p>Point with support for a current value</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/ElecFlow.html'>ElecFlow</a></th>
+<td>
+<p>Flow of electricity through wiring as <code>from >> to</code></p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/ElecMeter.html'>ElecMeter</a></th>
+<td>
+<p>Electricity meter</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/ElecPoint.html'>ElecPoint</a></th>
+<td>
+<p>Point related to electricity</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/ElecPointQuantity.html'>ElecPointQuantity</a></th>
+<td>
+<p>Quantity of electricity measured or controlled</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/Equip.html'>Equip</a></th>
+<td>
+<p>Equipment asset</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/Flow.html'>Flow</a></th>
+<td>
+<p>Flow relationship as <code>from >> to</code></p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/GasMeter.html'>GasMeter</a></th>
+<td>
+<p>Natural gas meter</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/GasTank.html'>GasTank</a></th>
+<td>
+<p>Natural gas tank</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/GasolineTank.html'>GasolineTank</a></th>
+<td>
+<p>Tank which stores gasoline</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/HisPoint.html'>HisPoint</a></th>
+<td>
+<p>Historized point with a history log of timestamp/value pairs</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/HotWaterPlant.html'>HotWaterPlant</a></th>
+<td>
+<p>HotWaterPlant outputs hot water for HVAC heating</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/Meter.html'>Meter</a></th>
+<td>
+<p>Equipment to meter a substance or electricity</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/MeterScope.html'>MeterScope</a></th>
+<td>
+<p>Determines if meter is the site-level meter or a submeter</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/OilTank.html'>OilTank</a></th>
+<td>
+<p>Tank which stores fuel oil</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/Plant.html'>Plant</a></th>
+<td>
+<p>Plant used to generate a substance</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/Point.html'>Point</a></th>
+<td>
+<p>Data point such as a sensor or actuator</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/PointType.html'>PointType</a></th>
+<td>
+<p>Classifies point as a sensor, command, or setpoint</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/Site.html'>Site</a></th>
+<td>
+<p>Site is a single building or other facility</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/Space.html'>Space</a></th>
+<td>
+<p>Space is a three-dimensional volume in the built environment</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/SteamFlow.html'>SteamFlow</a></th>
+<td>
+<p>Flow of steam through piping as <code>from >> to</code></p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/SteamMeter.html'>SteamMeter</a></th>
+<td>
+<p>Steam meter</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/SteamPlant.html'>SteamPlant</a></th>
+<td>
+<p>SteamPlant outputs steam for HVAC heating</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/Tank.html'>Tank</a></th>
+<td>
+<p>Storage tank vessel</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/Vav.html'>Vav</a></th>
+<td>
+<p>Variable air volume terminal unit</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/VavAirFlow.html'>VavAirFlow</a></th>
+<td>
+<p>How does the VAV pull in air</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/VavType.html'>VavType</a></th>
+<td>
+<p>Basic configuration of the VAV</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/WaterFlow.html'>WaterFlow</a></th>
+<td>
+<p>Flow of water through piping as <code>from >> to</code></p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/WaterMeter.html'>WaterMeter</a></th>
+<td>
+<p>Water meter</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/WaterPoint.html'>WaterPoint</a></th>
+<td>
+<p>Point related to water</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/WaterPointQuantity.html'>WaterPointQuantity</a></th>
+<td>
+<p>Quantity of water measured or controlled</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/WaterPointSection.html'>WaterPointSection</a></th>
+<td>
+<p>Equipment section where point is located</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/WaterTank.html'>WaterTank</a></th>
+<td>
+<p>Tank which stores water</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/WaterType.html'>WaterType</a></th>
+<td>
+<p>Water usage type</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/Weather.html'>Weather</a></th>
+<td>
+<p>Weather station</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/WeatherPoint.html'>WeatherPoint</a></th>
+<td>
+<p>Weather observation point</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/WeatherPointQuantity.html'>WeatherPointQuantity</a></th>
+<td>
+<p>Quantity of weather measured</p>
+</td>
+</tr>
+<tr>
+<th><a href='phIoT/WritablePoint.html'>WritablePoint</a></th>
+<td>
+<p>Point with writable output using 16-level priority array</p>
+</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'></h2>
+<div class='def-main-section'>
+<p class='def-footer-ts'>
+Generated 10-Aug-2018 Fri 9:52:01AM EDT</p>
+
+</div>
+
+</div>
+</body>
+</html>

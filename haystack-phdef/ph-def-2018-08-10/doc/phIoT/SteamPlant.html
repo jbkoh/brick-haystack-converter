@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<meta charset='UTF-8'/><title>phIoT::SteamPlant &ndash; Project Haystack</title>
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+
+<div class='def-nav'>
+<ul>
+<li><a href='../index.html'>Index</a></li><li> » </li><li><a href='../phIoT/index.html'>phIoT</a></li><li> » </li><li><a href='../phIoT/SteamPlant.html'>SteamPlant</a></li></ul>
+</div>
+<hr />
+
+<div class='def-main'>
+
+<h2 class='def-main-heading'>kind</h2>
+<div class='def-main-section'>
+<h1>phIoT::SteamPlant</h1>
+
+<p>SteamPlant outputs steam for HVAC heating</p>
+
+</div>
+
+<h2 class='def-main-heading'>details</h2>
+<div class='def-main-section'>
+<table class='def-props'>
+<tr>
+<th>lib</th>
+<td><a href='../phIoT/index.html'>phIoT</a></td>
+</tr>
+<tr>
+<th>superkind</th>
+<td><a href='../phIoT/Plant.html'>phIoT::Plant</a></td>
+</tr>
+<tr>
+<th>filter</th>
+<td>equip and plant and steam</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'>superkinds</h2>
+<div class='def-main-section'>
+<table class='def-props'>
+<tr>
+<th><a href='../ph/Dict.html'>Dict</a></th>
+<td>
+<p>Dict is a map of tag name/value pairs</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Entity.html'>Entity</a></th>
+<td>
+<p>Entity represents top-level dicts with a unique identifier</p>
+</td>
+</tr>
+<tr>
+<th><a href='../phIoT/Equip.html'>Equip</a></th>
+<td>
+<p>Equipment asset</p>
+</td>
+</tr>
+<tr>
+<th><a href='../phIoT/Plant.html'>Plant</a></th>
+<td>
+<p>Plant used to generate a substance</p>
+</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'>tags</h2>
+<div class='def-main-section'>
+<table class='def-props'>
+<tr id='steam'>
+<th><a href='../phIoT/SteamPlant.steam.html'>steam!</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>Labels a <a href='../phIoT/Plant.html'>Plant</a> as a <a href='../phIoT/SteamPlant.html'>SteamPlant</a></p>
+</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'>inherited</h2>
+<div class='def-main-section'>
+
+<h3 id='Entity'><span class='def-font-small'>superkind </span><a href='../ph/Entity.html'>Entity</a></h3>
+
+<p>Entity represents top-level dicts with a unique identifier</p>
+<table class='def-props'>
+<tr id='dis'>
+<th><a href='../ph/Entity.dis.html'>dis</a></th>
+<td><a href='../ph/Str.html'>Str</a></td>
+<td>
+<p>Display name for humans</p>
+</td>
+</tr>
+<tr id='id'>
+<th><a href='../ph/Entity.id.html'>id</a></th>
+<td><a href='../ph/Ref.html'>Ref</a></td>
+<td>
+<p>Defines the unique identifier of an entity in system using a Ref value type</p>
+</td>
+</tr>
+</table>
+
+<h3 id='Equip'><span class='def-font-small'>superkind </span><a href='../phIoT/Equip.html'>Equip</a></h3>
+
+<p>Equipment asset</p>
+<table class='def-props'>
+<tr id='equip'>
+<th><a href='../phIoT/Equip.equip.html'>equip!</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>Labels an <a href='../ph/Entity.html'>Entity</a> as an <a href='../phIoT/Equip.html'>Equip</a></p>
+</td>
+</tr>
+<tr id='siteRef'>
+<th><a href='../phIoT/Equip.siteRef.html'>siteRef</a></th>
+<td><a href='../ph/Contains.html'>Contains</a> « <a href='../phIoT/Site.html'>Site</a></td>
+<td>
+<p>Site which contains this equipment</p>
+</td>
+</tr>
+</table>
+
+<h3 id='Plant'><span class='def-font-small'>superkind </span><a href='../phIoT/Plant.html'>Plant</a></h3>
+
+<p>Plant used to generate a substance</p>
+<table class='def-props'>
+<tr id='plant'>
+<th><a href='../phIoT/Plant.plant.html'>plant!</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>Labels an <a href='../phIoT/Equip.html'>Equip</a> as a <a href='../phIoT/Plant.html'>Plant</a></p>
+</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'></h2>
+<div class='def-main-section'>
+<p class='def-footer-ts'>
+Generated 10-Aug-2018 Fri 9:52:01AM EDT</p>
+
+</div>
+
+</div>
+</body>
+</html>

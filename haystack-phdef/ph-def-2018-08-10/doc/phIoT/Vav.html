@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<meta charset='UTF-8'/><title>phIoT::Vav &ndash; Project Haystack</title>
+<link rel='stylesheet' type='text/css' href='../style.css' />
+</head>
+<body>
+
+<div class='def-nav'>
+<ul>
+<li><a href='../index.html'>Index</a></li><li> » </li><li><a href='../phIoT/index.html'>phIoT</a></li><li> » </li><li><a href='../phIoT/Vav.html'>Vav</a></li></ul>
+</div>
+<hr />
+
+<div class='def-main'>
+
+<h2 class='def-main-heading'>kind</h2>
+<div class='def-main-section'>
+<h1>phIoT::Vav</h1>
+
+<p>Variable air volume terminal unit</p>
+
+</div>
+
+<h2 class='def-main-heading'>details</h2>
+<div class='def-main-section'>
+<table class='def-props'>
+<tr>
+<th>lib</th>
+<td><a href='../phIoT/index.html'>phIoT</a></td>
+</tr>
+<tr>
+<th>superkind</th>
+<td><a href='../phIoT/Equip.html'>phIoT::Equip</a></td>
+</tr>
+<tr>
+<th>filter</th>
+<td>equip and vav</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'>superkinds</h2>
+<div class='def-main-section'>
+<table class='def-props'>
+<tr>
+<th><a href='../ph/Dict.html'>Dict</a></th>
+<td>
+<p>Dict is a map of tag name/value pairs</p>
+</td>
+</tr>
+<tr>
+<th><a href='../ph/Entity.html'>Entity</a></th>
+<td>
+<p>Entity represents top-level dicts with a unique identifier</p>
+</td>
+</tr>
+<tr>
+<th><a href='../phIoT/Equip.html'>Equip</a></th>
+<td>
+<p>Equipment asset</p>
+</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'>traits</h2>
+<div class='def-main-section'>
+<table class='def-props'>
+<tr>
+<th><a href='../phIoT/AirDuctwork.html'>AirDuctwork</a></th>
+<td>
+<p>Ductwork configuration</p>
+</td>
+</tr>
+<tr>
+<th><a href='../phIoT/AirHeatingMethod.html'>AirHeatingMethod</a></th>
+<td>
+<p>Method to heat air for conditioning spaces</p>
+</td>
+</tr>
+<tr>
+<th><a href='../phIoT/VavAirFlow.html'>VavAirFlow</a></th>
+<td>
+<p>How does the VAV pull in air</p>
+</td>
+</tr>
+<tr>
+<th><a href='../phIoT/VavType.html'>VavType</a></th>
+<td>
+<p>Basic configuration of the VAV</p>
+</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'>tags</h2>
+<div class='def-main-section'>
+<table class='def-props'>
+<tr id='ahuRef'>
+<th><a href='../phIoT/Vav.ahuRef.html'>ahuRef</a></th>
+<td><a href='../phIoT/AirFlow.html'>AirFlow</a> « <a href='../phIoT/Ahu.html'>Ahu</a></td>
+<td>
+<p>AHU which supplies air to this VAV</p>
+</td>
+</tr>
+<tr id='spaceRef'>
+<th><a href='../phIoT/Vav.spaceRef.html'>spaceRef</a></th>
+<td><a href='../phIoT/AirFlow.html'>AirFlow</a> » <a href='../phIoT/Space.html'>Space</a></td>
+<td>
+<p>Zone serviced by this VAV</p>
+</td>
+</tr>
+<tr id='vav'>
+<th><a href='../phIoT/Vav.vav.html'>vav!</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>Labels an <a href='../phIoT/Equip.html'>Equip</a> as an <a href='../phIoT/Vav.html'>Vav</a></p>
+</td>
+</tr>
+</table>
+
+<h3 id='AirDuctwork'><span class='def-font-small'>choice </span><a href='../phIoT/AirDuctwork.html'>AirDuctwork</a></h3>
+
+<p>Ductwork configuration</p>
+<table class='def-props'>
+<tr id='dualDuct'>
+<th><a href='../phIoT/AirDuctwork.dualDuct.html'>dualDuct</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>Two ducts</p>
+</td>
+</tr>
+<tr id='singleDuct'>
+<th><a href='../phIoT/AirDuctwork.singleDuct.html'>singleDuct</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>One single duct</p>
+</td>
+</tr>
+<tr id='tripleDuct'>
+<th><a href='../phIoT/AirDuctwork.tripleDuct.html'>tripleDuct</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>Three ducts</p>
+</td>
+</tr>
+</table>
+
+<h3 id='AirHeatingMethod'><span class='def-font-small'>choice </span><a href='../phIoT/AirHeatingMethod.html'>AirHeatingMethod</a></h3>
+
+<p>Method to heat air for conditioning spaces</p>
+<table class='def-props'>
+<tr id='elecHeat'>
+<th><a href='../phIoT/AirHeatingMethod.elecHeat.html'>elecHeat</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>Heating is generated locally using electricity</p>
+</td>
+</tr>
+<tr id='gasHeat'>
+<th><a href='../phIoT/AirHeatingMethod.gasHeat.html'>gasHeat</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>Heating is generated locally using electricity</p>
+</td>
+</tr>
+<tr id='hotWaterHeat'>
+<th><a href='../phIoT/AirHeatingMethod.hotWaterHeat.html'>hotWaterHeat</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>Heating is supplied by hot water</p>
+</td>
+</tr>
+<tr id='steamHeat'>
+<th><a href='../phIoT/AirHeatingMethod.steamHeat.html'>steamHeat</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>Heating is supplied by steam</p>
+</td>
+</tr>
+</table>
+
+<h3 id='VavAirFlow'><span class='def-font-small'>choice </span><a href='../phIoT/VavAirFlow.html'>VavAirFlow</a></h3>
+
+<p>How does the VAV pull in air</p>
+<table class='def-props'>
+<tr id='parallel'>
+<th><a href='../phIoT/VavAirFlow.parallel.html'>parallel</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>VAV pulls air from outside the primary air flow</p>
+</td>
+</tr>
+<tr id='series'>
+<th><a href='../phIoT/VavAirFlow.series.html'>series</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>VAV pulls air from the primary air flow</p>
+</td>
+</tr>
+</table>
+
+<h3 id='VavType'><span class='def-font-small'>choice </span><a href='../phIoT/VavType.html'>VavType</a></h3>
+
+<p>Basic configuration of the VAV</p>
+<table class='def-props'>
+<tr id='coolOnly'>
+<th><a href='../phIoT/VavType.coolOnly.html'>coolOnly</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>Cooling only VAV without a fan</p>
+</td>
+</tr>
+<tr id='fanPowered'>
+<th><a href='../phIoT/VavType.fanPowered.html'>fanPowered</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>VAV contains a fan with reheat</p>
+</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'>inherited</h2>
+<div class='def-main-section'>
+
+<h3 id='Entity'><span class='def-font-small'>superkind </span><a href='../ph/Entity.html'>Entity</a></h3>
+
+<p>Entity represents top-level dicts with a unique identifier</p>
+<table class='def-props'>
+<tr id='dis'>
+<th><a href='../ph/Entity.dis.html'>dis</a></th>
+<td><a href='../ph/Str.html'>Str</a></td>
+<td>
+<p>Display name for humans</p>
+</td>
+</tr>
+<tr id='id'>
+<th><a href='../ph/Entity.id.html'>id</a></th>
+<td><a href='../ph/Ref.html'>Ref</a></td>
+<td>
+<p>Defines the unique identifier of an entity in system using a Ref value type</p>
+</td>
+</tr>
+</table>
+
+<h3 id='Equip'><span class='def-font-small'>superkind </span><a href='../phIoT/Equip.html'>Equip</a></h3>
+
+<p>Equipment asset</p>
+<table class='def-props'>
+<tr id='equip'>
+<th><a href='../phIoT/Equip.equip.html'>equip!</a></th>
+<td><a href='../ph/Marker.html'>Marker</a></td>
+<td>
+<p>Labels an <a href='../ph/Entity.html'>Entity</a> as an <a href='../phIoT/Equip.html'>Equip</a></p>
+</td>
+</tr>
+<tr id='siteRef'>
+<th><a href='../phIoT/Equip.siteRef.html'>siteRef</a></th>
+<td><a href='../ph/Contains.html'>Contains</a> « <a href='../phIoT/Site.html'>Site</a></td>
+<td>
+<p>Site which contains this equipment</p>
+</td>
+</tr>
+</table>
+
+</div>
+
+<h2 class='def-main-heading'></h2>
+<div class='def-main-section'>
+<p class='def-footer-ts'>
+Generated 10-Aug-2018 Fri 9:52:01AM EDT</p>
+
+</div>
+
+</div>
+</body>
+</html>
