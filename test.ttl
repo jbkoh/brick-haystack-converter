@@ -1,0 +1,165 @@
+@prefix brick: <https://brickschema.org#> .
+@prefix hs: <https://project-haystack.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+hs:AirCoolingMethod rdfs:subClassOf hs:Choice .
+
+hs:AirDuctwork rdfs:subClassOf hs:Choice .
+
+hs:AirHeatingMethod rdfs:subClassOf hs:Choice .
+
+hs:AirPoint rdfs:subClassOf hs:Point .
+
+hs:AirPointQuantity rdfs:subClassOf hs:Choice .
+
+hs:AirPointSection rdfs:subClassOf hs:Choice .
+
+hs:AirVolume rdfs:subClassOf hs:Choice .
+
+hs:CurPoint rdfs:subClassOf hs:Mixin .
+
+hs:HisPoint rdfs:subClassOf hs:Mixin .
+
+hs:PointType rdfs:subClassOf hs:Choice .
+
+hs:WaterPoint rdfs:subClassOf hs:Point .
+
+hs:WaterPointQuantity rdfs:subClassOf hs:Choice .
+
+hs:WaterPointSection rdfs:subClassOf hs:Choice .
+
+hs:WaterType rdfs:subClassOf hs:Choice .
+
+hs:WritablePoint rdfs:subClassOf hs:Mixin .
+
+hs:air rdfs:subClassOf hs:Marker .
+
+hs:blowdown rdfs:subClassOf hs:Marker .
+
+hs:bypass rdfs:subClassOf hs:Marker .
+
+hs:chilled rdfs:subClassOf hs:Marker .
+
+hs:chilledWaterCool rdfs:subClassOf hs:Marker .
+
+hs:cmd rdfs:subClassOf hs:Marker .
+
+hs:condenser rdfs:subClassOf hs:Marker .
+
+hs:constantVolume rdfs:subClassOf hs:Marker .
+
+hs:cur rdfs:subClassOf hs:Marker .
+
+hs:curErr rdfs:subClassOf hs:Str .
+
+hs:curStatus rdfs:subClassOf hs:Str .
+
+hs:curVal rdfs:subClassOf hs:Scalar .
+
+hs:damper rdfs:subClassOf hs:Marker .
+
+hs:delta rdfs:subClassOf hs:Marker .
+
+hs:dewPoint rdfs:subClassOf hs:Marker .
+
+hs:discharge rdfs:subClassOf hs:Marker .
+
+hs:domestic rdfs:subClassOf hs:Marker .
+
+hs:dualDuct rdfs:subClassOf hs:Marker .
+
+hs:dxCool rdfs:subClassOf hs:Marker .
+
+hs:elecHeat rdfs:subClassOf hs:Marker .
+
+hs:entering rdfs:subClassOf hs:Marker .
+
+hs:enum rdfs:subClassOf hs:EnumRange .
+
+hs:exhaust rdfs:subClassOf hs:Marker .
+
+hs:fan rdfs:subClassOf hs:Marker .
+
+hs:feelsLike rdfs:subClassOf hs:Marker .
+
+hs:flow rdfs:subClassOf hs:Marker .
+
+hs:gasHeat rdfs:subClassOf hs:Marker .
+
+hs:his rdfs:subClassOf hs:Marker .
+
+hs:hisErr rdfs:subClassOf hs:Str .
+
+hs:hisMode rdfs:subClassOf hs:Str .
+
+hs:hisStatus rdfs:subClassOf hs:Str .
+
+hs:hisTotalized rdfs:subClassOf hs:Marker .
+
+hs:hot rdfs:subClassOf hs:Marker .
+
+hs:hotWaterHeat rdfs:subClassOf hs:Marker .
+
+hs:humidity rdfs:subClassOf hs:Marker .
+
+hs:kind rdfs:subClassOf hs:Str .
+
+hs:leaving rdfs:subClassOf hs:Marker .
+
+hs:level rdfs:subClassOf hs:Marker .
+
+hs:makeup rdfs:subClassOf hs:Marker .
+
+hs:mixed rdfs:subClassOf hs:Marker .
+
+hs:outside rdfs:subClassOf hs:Marker .
+
+hs:point rdfs:subClassOf hs:Marker .
+
+hs:pressure rdfs:subClassOf hs:Marker .
+
+hs:pump rdfs:subClassOf hs:Marker .
+
+hs:return rdfs:subClassOf hs:Marker .
+
+hs:sensor rdfs:subClassOf hs:Marker .
+
+hs:singleDuct rdfs:subClassOf hs:Marker .
+
+hs:sp rdfs:subClassOf hs:Marker .
+
+hs:steamHeat rdfs:subClassOf hs:Marker .
+
+hs:temp rdfs:subClassOf hs:Marker .
+
+hs:tripleDuct rdfs:subClassOf hs:Marker .
+
+hs:tz rdfs:subClassOf hs:TimeZoneName .
+
+hs:unit rdfs:subClassOf hs:UnitName .
+
+hs:valve rdfs:subClassOf hs:Marker .
+
+hs:variableVolume rdfs:subClassOf hs:Marker .
+
+hs:water rdfs:subClassOf hs:Marker .
+
+hs:wetBulb rdfs:subClassOf hs:Marker .
+
+hs:writable rdfs:subClassOf hs:Marker .
+
+hs:writeErr rdfs:subClassOf hs:Str .
+
+hs:writeLevel rdfs:subClassOf hs:Number .
+
+hs:writeStatus rdfs:subClassOf hs:Str .
+
+hs:writeVal rdfs:subClassOf hs:Scalar .
+
+hs:zone rdfs:subClassOf hs:Marker .
+
+hs:Point rdfs:subClassOf hs:Entity .
+

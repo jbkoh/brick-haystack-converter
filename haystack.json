@@ -1,0 +1,116 @@
+{
+  "AirPoint": {
+    "air": {},
+    "use": [
+      "AirPointQuantity",
+      "AirPointSection"
+    ]
+  },
+  "AirPointQuantity": {
+    "temp": {},
+    "wetBulb": {},
+    "feelsLike": {},
+    "dewPoint": {},
+    "humidity": {},
+    "flow": {},
+    "pressure": {},
+    "fan": {},
+    "damper": {}
+  },
+  "AirPointSection": {
+    "discharge": {},
+    "entering": {},
+    "exhaust": {},
+    "mixed": {},
+    "outside": {},
+    "return": {},
+    "zone": {}
+  },
+  "WaterPoint": {
+    "water": {},
+    "use": [
+      "WaterType",
+      "WaterPointQuantity",
+      "WaterPointSection"
+    ]
+  },
+  "WaterPointQuantity": {
+    "temp": {},
+    "pressure": {},
+    "flow": {},
+    "level": {},
+    "pump": {},
+    "valve": {}
+  },
+  "WaterPointSection": {
+    "bypass": {},
+    "delta": {},
+    "entering": {},
+    "leaving": {}
+  },
+  "Point": {
+    "point": {},
+    "kind": {},
+    "enum": {},
+    "unit": {},
+    "tz": {},
+    "use": [
+      "PointType",
+      "CurPoint",
+      "HisPoint",
+      "WritablePoint"
+    ]
+  },
+  "PointType": {
+    "sensor": {},
+    "cmd": {},
+    "sp": {}
+  },
+  "CurPoint": {
+    "cur": {},
+    "curErr": {},
+    "curStatus": {},
+    "curVal": {}
+  },
+  "HisPoint": {
+    "his": {},
+    "hisErr": {},
+    "hisStatus": {},
+    "hisMode": {},
+    "hisTotalized": {}
+  },
+  "WritablePoint": {
+    "writable": {},
+    "writeVal": {},
+    "writeLevel": {},
+    "writeStatus": {},
+    "writeErr": {}
+  },
+  "AirHeatingMethod": {
+    "hotWaterHeat": {},
+    "steamHeat": {},
+    "elecHeat": {},
+    "gasHeat": {}
+  },
+  "AirCoolingMethod": {
+    "chilledWaterCool": {},
+    "dxCool": {}
+  },
+  "AirVolume": {
+    "constantVolume": {},
+    "variableVolume": {}
+  },
+  "AirDuctwork": {
+    "singleDuct": {},
+    "dualDuct": {},
+    "tripleDuct": {}
+  },
+  "WaterType": {
+    "domestic": {},
+    "hot": {},
+    "chilled": {},
+    "condenser": {},
+    "makeup": {},
+    "blowdown": {}
+  }
+}

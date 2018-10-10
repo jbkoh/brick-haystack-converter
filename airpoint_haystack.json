@@ -1,0 +1,30 @@
+{
+  "AirPoint": {
+    "air!": {
+      "use": [
+        "AirPointQuantity",
+        "AirPointSection"
+      ]
+    }
+  },
+  "AirPointQuantity": {
+    "temp": {},
+    "wetBulb": {},
+    "feelsLike": {},
+    "dewPoint": {},
+    "humidity": {},
+    "flow": {},
+    "pressure": {},
+    "fan": {},
+    "damper": {}
+  },
+  "AirPointSection": {
+    "discharge": {},
+    "entering": {},
+    "exhaust": {},
+    "mixed": {},
+    "outside": {},
+    "return": {},
+    "zone": {}
+  }
+}

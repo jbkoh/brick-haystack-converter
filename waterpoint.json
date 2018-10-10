@@ -1,0 +1,25 @@
+{
+  "WaterPoint": {
+    "water!": {
+      "use": [
+        "WaterType",
+        "WaterPointQuantity",
+        "WaterPointSection"
+      ]
+    }
+  },
+  "WaterPointQuantity": {
+    "temp": {},
+    "pressure": {},
+    "flow": {},
+    "level": {},
+    "pump": {},
+    "valve": {}
+  },
+  "WaterPointSection": {
+    "bypass": {},
+    "delta": {},
+    "entering": {},
+    "leaving": {}
+  }
+}
